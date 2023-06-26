@@ -1,0 +1,22 @@
+.wrapper {
+}
+
+.slider {
+  @media screen and (max-width: 70em) {
+    display: none;
+  }
+}
+
+.grid {
+  display: none;
+  @media screen and (max-width: 70em) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(8em, 1fr));
+    grid-gap: 1em;
+
+    & > * {
+      justify-self: center;
+      align-self: center;
+    }
+  }
+}

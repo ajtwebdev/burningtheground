@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://projectlandscape.ca
+
+# Sitemaps
+Sitemap: https://projectlandscape.ca/sitemap.xml

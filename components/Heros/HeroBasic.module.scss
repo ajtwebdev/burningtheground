@@ -1,0 +1,104 @@
+.wrapper {
+  padding-bottom: 4em;
+  p {
+    margin-bottom: 0;
+  }
+
+  .carousel-indicators {
+    margin-bottom: 4rem;
+  }
+}
+
+.heroGrid {
+  display: grid;
+  grid-template-rows: auto auto;
+}
+
+.heroWrapper {
+  grid-row: 1 / -1;
+  grid-column: 1 / -1;
+  z-index: 1;
+}
+
+.heroBottomText {
+  grid-row: 2 / -1;
+  grid-column: 1 / -1;
+  z-index: 2;
+
+  background: var(--clr-dark);
+  color: var(--txt-light);
+  padding: 2em;
+  width: 80%;
+
+  @media screen and (max-width: 50em) {
+    display: none;
+  }
+}
+
+.content {
+  position: relative;
+
+  img {
+    height: 90vh;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    background: rgba(0, 0, 0, 0.1);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+.desktopImg {
+  @media screen and (max-width: 32em) {
+    display: none;
+  }
+}
+
+.mobileImg {
+  @media screen and (min-width: 32em) {
+    display: none;
+  }
+}
+
+.content1 {
+  background: url("http://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/05/outdoor-living-slider.webp"),
+    rgba(0, 0, 0, 0);
+  background-blend-mode: overlay;
+  background-position: center;
+  height: 90vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: block !important;
+  width: 100% !important;
+}
+
+.content2 {
+  background: url("http://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/05/hardscaping-slider.webp"),
+    rgba(0, 0, 0, 0);
+  background-blend-mode: overlay;
+  background-position: center;
+  height: 90vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: block !important;
+  width: 100% !important;
+}
+
+.content3 {
+  background: url("http://21-pl.purpleparrotwebsites.com/wp-content/uploads/2023/05/softscaping-slider-1.webp"),
+    rgba(0, 0, 0, 0);
+  background-blend-mode: overlay;
+  background-position: center;
+  height: 90vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: block !important;
+  width: 100% !important;
+}
